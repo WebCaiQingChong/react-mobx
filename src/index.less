@@ -1,0 +1,69 @@
+#tips {
+  .tips {
+    width: 80%;
+    font-size: 28px;
+    padding: 24px;
+    background: rgba(0, 0, 0, .8);
+    color: #fff;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    border-radius: 8px;
+  }
+  .loading {
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .6);
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &:before {
+      content: '';
+      display: block;
+      width: 80px;
+      height: 80px;
+      border-radius: 100%;
+      box-sizing: border-box;
+      border: 4px solid #CCAD74;
+      clip: rect(0, 40px, 40px, 0);
+      position: absolute;
+      animation: circle .5s infinite linear;
+      @keyframes circle {
+        from {
+          transform: rotate(0deg)
+        }
+        to {
+          transform: rotate(360deg)
+        }
+      }
+    }
+    span {
+      letter-spacing: 0;
+      padding: 20px 30px;
+      display: block;
+      margin: 0 auto;
+      background: url(public/images/incss/waiting.png) repeat-y;
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      animation: go 80s linear infinite;
+      transform: translate3d(0, 0, 0);
+      backface-visibility: hidden;
+      font-size: 28px;
+      margin-top: 160px;
+    }
+    @keyframes go {
+      0% {background-position: 0% 50%;}
+    
+    100% {background-position: 100% 50%;}
+    }
+  }
+}
