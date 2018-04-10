@@ -42,7 +42,7 @@
   进入目录
 
   `
-    cd  ydhm
+    cd  react-mobx
   `
   `
     npm install
