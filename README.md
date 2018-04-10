@@ -83,7 +83,7 @@
       historyApiFallback: true,
       proxy: {
         "/foxDspPlat": {
-          target: 'http://60.205.169.188:8080'
+          target: '要请求的服务器地址'
         }
       }
     },
