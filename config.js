@@ -1,5 +1,5 @@
 module.exports = {
-  port: 4000,
+  port: 5000,
   publicPath: 'dist/',
   title: '黑卡',
   requestTimeout: 5000,
