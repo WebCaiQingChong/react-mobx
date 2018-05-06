@@ -9,7 +9,7 @@ const history = createHistory()
 mobxRouter(history)
 render(
   <Provider store={stores}>
-    <App history={history} />
+    <App history={history} a='111' />
   </Provider>,
   document.getElementById('root')
 )
